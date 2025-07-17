@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography of Jane Doe</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a more modern look */
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        /* New CSS rules as per challenge instructions */
+        h1 {
+            color: hotpink; /* Make the level one heading pink */
+            border-bottom: 10px dotted purple; /* Give the heading a 10px dotted border-bottom which uses the CSS color keyword purple */
+        }
+
+        h2 {
+            font-style: italic; /* Make the level 2 heading italic */
+        }
+
+        /* Give the ul used for the contact details a background-color of #eeeeee, and a 5px solid purple border. Use some padding to push the content away from the border. */
+        ul {
+            background-color: #eeeeee;
+            border: 5px solid purple;
+            padding: 20px; /* Added padding */
+            border-radius: 1rem; /* Added rounded corners for consistency with Tailwind */
+        }
+
+        /* Make the links green on hover. */
+        a:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-purple-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white shadow-xl rounded-3xl p-8 md:p-12 max-w-4xl w-full space-y-8 border border-gray-200">
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+                Jane Doe
+            </h1>
+            <div class="job-title text-xl text-gray-600 italic">Web Developer</div>
+        </header>
+
+        <!-- Main Content -->
+        <section class="text-lg text-gray-700 leading-relaxed mb-8">
+            <p class="mb-4">
+                Far far away, behind the word mountains, far from the countries Vokalia and
+                Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                right at the coast of the Semantics, a large language ocean.
+            </p>
+            <p>
+                A small river named Duden flows by their place and supplies it with the
+                necessary regelialia. It is a paradisematic country, in which roasted parts of
+                sentences fly into your mouth.
+            </p>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact information</h2>
+            <ul class="list-none space-y-2 text-lg text-gray-700">
+                <li>Email: <a href="mailto:jane@example.com">jane@example.com</a></li>
+                <li>Web: <a href="http://example.com">http://example.com</a></li>
+                <li>Tel: 123 45678</li>
+            </ul>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="text-center text-gray-500 text-sm mt-8">
+            <p>&copy; 2025 Fictional Biography. All rights reserved.</p>
+            <p>Created for educational purposes.</p>
+        </footer>
+    </div>
+</body>
+</html>
